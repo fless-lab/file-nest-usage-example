@@ -1,84 +1,84 @@
 # FileNest Usage Example
 
-Ce projet démontre l'utilisation de FileNest, un service de stockage de fichiers sécurisé et facile à utiliser. FileNest vous permet de stocker et de récupérer des fichiers en toute sécurité, tout en offrant des fonctionnalités avancées telles que la gestion des signatures HMAC pour garantir l'intégrité des données.
+This project demonstrates the usage of FileNest, a secure and user-friendly file storage service. FileNest allows you to store and retrieve files securely, offering advanced features such as HMAC signature management to ensure data integrity.
 
-## Vidéo de démonstration
+## Demo Video
 
-[Regardez la vidéo de démonstration](https://www.youtube.com/@raoufcode) pour une présentation visuelle de FileNest et son utilisation dans cet exemple.
+[Watch the demo video](https://www.youtube.com/@raoufcode) for a visual presentation of FileNest and its usage in this example.
 
-## Prérequis
+## Prerequisites
 
-Assurez-vous d'avoir Node.js et npm installés sur votre machine avant de commencer. N'oubliez pas de configurer la clé secrète HMAC dans le fichier d'environnement de votre application.
+Make sure you have Node.js and npm installed on your machine before starting. Don't forget to configure the HMAC secret key in your application's environment file.
 
 ```bash
-# Exemple de configuration de la clé secrète HMAC
-HMAC_SECRET=VotreCleSecrete
+# Example HMAC secret key configuration
+HMAC_SECRET=YourSecretKey
 ```
 
 ## Backend (API) ✔️
 
-Le backend de cet exemple est construit avec Node.js, Express, et MongoDB. Il utilise FileNest pour le stockage des fichiers. Pour configurer et exécuter le backend, suivez ces étapes :
+The backend of this example is built with Node.js, Express, and MongoDB. It uses FileNest for file storage. To set up and run the backend, follow these steps:
 
-1. Accédez au répertoire du backend.
+1. Navigate to the backend directory.
 
 ```bash
 cd backend
 ```
 
-2. Installez les dépendances.
+2. Install dependencies.
 
 ```bash
 npm install
 ```
 
-3. Démarrez le serveur.
+3. Start the server.
 
 ```bash
 npm start
 ```
 
-Le backend sera accessible à l'adresse http://localhost:5000.
+The backend will be accessible at http://localhost:5000.
 
 ## Frontend (React) ✔️
 
-Le frontend est construit avec React et Tailwind CSS. Pour le configurer et le lancer, procédez comme suit :
+The frontend is built with React and Tailwind CSS. To set up and run the frontend, follow these steps:
 
-1. Accédez au répertoire du frontend.
+1. Navigate to the frontend directory.
 
 ```bash
 cd frontend
 ```
 
-2. Installez les dépendances.
+2. Install dependencies.
 
 ```bash
 npm install
 ```
 
-3. Démarrez l'application.
+3. Start the application.
 
 ```bash
 npm start
 ```
 
-L'application frontend sera accessible à l'adresse http://localhost:3000.
+The frontend application will be accessible at http://localhost:3000.
 
 ---
 
-**NB : File Nest devra être déjà en cours d'exécution. Consultez le README de FileNest pour en apprendre plus sur comment faire sa mise en place 👉 [FileNest Readme](https://github.com/fless-lab/file-nest/blob/master/README.md)**
+**Note: File Nest should already be running. Check the FileNest README for more information on how to set it up 👉 [FileNest Readme](https://github.com/fless-lab/file-nest/blob/master/README.md)**
 
 ---
 
-## Fonctionnalités Démontrées
+## Demonstrated Features
 
-- **Upload de fichiers** ✅
-- **Récupération de fichiers** ✅
-- Suppression de fichiers ⏳
-- Suppression permanente de fichiers ⏳
-- Restauration de fichiers ⏳
+- **File Upload** ✅
+- **File Retrieval** ✅
+- File Deletion ⏳
+- Permanent File Deletion ⏳
+- File Restoration ⏳
 
-## Contribuer
+## Contribute
 
-Nous encourageons activement les contributions à ce projet. Si vous trouvez des problèmes, des bogues, ou si vous avez des suggestions d'amélioration, n'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+We actively encourage contributions to this project. If you find issues, bugs, or have improvement suggestions, feel free to open an issue or submit a pull request.
 
-N'oubliez pas de consulter également le [repo de FileNest](https://github.com/fless-lab/file-nest.git) pour plus d'informations sur ce puissant service de stockage de fichiers.
+Also, make sure to check out the [FileNest repo](https://github.com/fless-lab/file-nest.git) for more information on this powerful file storage service.
