@@ -1,7 +1,6 @@
 const express = require('express');
 const UserController = require('./user.controller');
 const multer = require('multer');
-const FileNestService = require('./fn.service');
 const router = express.Router();
 
 const storage = multer.memoryStorage(); // Stockage en mémoire pour les fichiers
@@ -21,21 +20,7 @@ router.get('/users', UserController.getAllUsers);
 // Endpoint pour récupérer les détails d'un utilisateur par son ID
 router.get('/users/:userId', UserController.getUserById);
 
-
-router.get('/browse-files/:fileId', async (req, res) => {
-    try {
-      const { fileId } = req.params;
-      const fileData = await FileNestService.getFileData(fileId);
-  
-      res.writeHead(200, {
-        'Content-Type': fileData.mimeType,
-        'Content-Length': fileData.content.length,
-      });
-  
-      res.end(fileData.content);
-    } catch (error) {
-      res.status(error.statusCode || 500).json({ error: 'Erreur lors de la récupération du fichier' });
-    }
-  });
+// Endpoint pour rendre un fichier
+router.get('/browse-files/:fileId', UserController.getFile);
 
 module.exports = router;
